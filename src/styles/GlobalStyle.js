@@ -2,22 +2,20 @@ import { createGlobalStyle } from 'styled-components';
 import Fonts from './fonts';
 import TransitionStyles from './TransitionStyles';
 import PrismStyles from './PrismStyles';
-
 const GlobalStyle = createGlobalStyle`
   ${Fonts};
-
   :root {
-    --dark-navy: #020c1b;
-    --navy: #0a192f;
-    --light-navy: #112240;
-    --lightest-navy: #233554;
-    --navy-shadow: rgba(2, 12, 27, 0.7);
-    --slate: #8892b0;
-    --light-slate: #a8b2d1;
-    --lightest-slate: #ccd6f6;
+    --dark-navy: #09121E;
+    --navy: #E9EBEE;
+    --light-navy: #E9EBEE;
+    --lightest-navy: #E9EBEE;
+    --navy-shadow: rgba(20, 20, 20, 0.7);
+    --slate: #7C7F83; 
+    --light-slate: #3C4147;
+    --lightest-slate: #00184E;
     --white: #e6f1ff;
-    --green: #64ffda;
-    --green-tint: rgba(100, 255, 218, 0.1);
+    --green: #035DB4;
+    --green-tint: rgba(0, 95, 184, 0.1);
 
     --font-sans: 'Calibre', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;
     --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
