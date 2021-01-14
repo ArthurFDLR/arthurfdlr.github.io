@@ -11,7 +11,7 @@ const StyledHeroSection = styled.section`
   min-height: 100vh;
 
   h1 {
-    margin: 0 0 30px 4px;
+    margin: 25px 0 30px 4px;
     color: var(--green);
     font-family: var(--font-mono);
     font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
@@ -52,7 +52,7 @@ const Hero = () => {
   const three = <h3 className="big-heading">I'm making smart robots.</h3>;
   const four = (
     <p>
-      I'm an embedded system engineering student based in Chicago, IL specializing in the application of Machine Learning techniques toward smarter robots.
+      I'm an embedded systems engineering student based in Chicago, IL specializing in the application of Machine Learning techniques toward smarter robots.
     </p>
   );
   const five = (

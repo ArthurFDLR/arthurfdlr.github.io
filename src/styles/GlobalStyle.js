@@ -5,7 +5,7 @@ import PrismStyles from './PrismStyles';
 const GlobalStyle = createGlobalStyle`
   ${Fonts};
   :root {
-    --dark-navy: #09121E;
+    --dark-navy: #CFCFD3;
     --navy: #E9EBEE;
     --light-navy: #E9EBEE;
     --lightest-navy: #E9EBEE;

@@ -3,6 +3,10 @@ module.exports = {
 
   socialMedia: [
     {
+      name: 'Linkedin',
+      url: 'https://www.linkedin.com/in/arthur-findelair',
+    },
+    {
       name: 'GitHub',
       url: 'https://github.com/ArthurFDLR',
     },
@@ -11,8 +15,8 @@ module.exports = {
       url: 'https://www.instagram.com/arthur_fdlr',
     },
     {
-      name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/arthur-findelair',
+      name: 'Youtube',
+      url: 'https://www.youtube.com/channel/UCLgrI4ddvTaGcQWrbYewtVg',
     },
   ],
 

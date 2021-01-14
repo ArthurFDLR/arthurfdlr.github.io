@@ -16,8 +16,7 @@ const StyledHeader = styled.header`
   z-index: 11;
   padding: 0px 50px;
   width: 100%;
-  height: var(--nav-height);
-  background-color: var(--navy);
+  height: var(--nav-scroll-height);
   filter: none !important;
   pointer-events: auto !important;
   user-select: auto !important;
@@ -30,8 +29,8 @@ const StyledHeader = styled.header`
     css`
       height: var(--nav-scroll-height);
       transform: translateY(0px);
-      background-color: rgba(10, 25, 47, 0.85);
-      box-shadow: 0 10px 30px -10px var(--navy-shadow);
+      background-color: rgba(183, 184, 187, 0.65);
+      box-shadow: 0 5px 30px -5px var(--navy-shadow);
     `};
 
   ${props =>
@@ -101,14 +100,11 @@ const StyledLinks = styled.div`
     li {
       margin: 0 5px;
       position: relative;
-      counter-increment: item 1;
       font-size: var(--fz-xs);
 
       a {
         padding: 10px;
-
         &:before {
-          content: '0' counter(item) '.';
           margin-right: 5px;
           color: var(--green);
           font-size: var(--fz-xxs);
