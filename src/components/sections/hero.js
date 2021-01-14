@@ -18,7 +18,7 @@ const StyledHeroSection = styled.section`
     font-weight: 400;
 
     @media (max-width: 480px) {
-      margin: 0 0 20px 2px;
+      margin: 15px 0 20px 2px;
     }
   }
 
@@ -52,7 +52,8 @@ const Hero = () => {
   const three = <h3 className="big-heading">I'm making smart robots.</h3>;
   const four = (
     <p>
-      I'm an embedded systems engineering student based in Chicago, IL specializing in the application of Machine Learning techniques toward smarter robots.
+      I'm an embedded systems engineering student based in Chicago, IL specializing in the
+      application of Machine Learning techniques toward smarter robots.
     </p>
   );
   const five = (

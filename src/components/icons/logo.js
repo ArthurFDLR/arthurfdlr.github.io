@@ -3,9 +3,13 @@ import React from 'react';
 const IconLogo = () => (
   <svg id="logo" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 100 100">
     <title>Logo</title>
-    <text x="10" y="68" fill="currentColor" stroke-width="2" font-family="Arial" font-weight="500" font-size="2.7em" letter-spacing="-8">AF</text>
-    <g transform="translate(-8.000000, -2.000000)">
-      <g transform="translate(11.000000, 5.000000)">
+    <g>
+      <g transform="translate(3.000000, 3.000000)">
+        <path
+          transform="scale(0.2, 0.2) translate(45, 120)"
+          d="M133.828 151.562H48.0469L28.7812 205H0.9375L79.125 0.25H102.75L181.078 205H153.375L133.828 151.562ZM56.2031 129.344H125.812L90.9375 33.5781L56.2031 129.344ZM266.842 114.578H180.921V205H153.921V0.25H280.764V22.4688H180.921V92.5H266.842V114.578Z"
+          fill="currentColor"
+        />
         <polygon
           id="Shape"
           stroke="currentColor"
@@ -19,7 +23,4 @@ const IconLogo = () => (
   </svg>
 );
 
-// <g id="B" transform="translate(11.000000, 5.000000)">
-//<text x="2" y="58" fill="currentColor" stroke-width="2" font-family="Arial" font-weight="500" font-size="2.7em" letter-spacing="-8">AF</text>
-//</g>
 export default IconLogo;
