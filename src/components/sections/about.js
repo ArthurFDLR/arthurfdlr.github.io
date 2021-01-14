@@ -141,19 +141,19 @@ const About = () => {
       <div className="inner">
         <StyledText>
           <div>
-            <p>Hello! I'm Brittany, a software engineer based in Boston, MA.</p>
+            <p>Hello! I'm Arthur, a software engineer based in Chicago, IL.</p>
 
             <p>
-              I enjoy creating things that live on the internet, whether that be websites,
-              applications, or anything in between. My goal is to always build products that provide
-              pixel-perfect, performant experiences.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Diam volutpat commodo sed egestas egestas
+              fringilla phasellus faucibus. Pretium vulputate sapien nec sagittis aliquam malesuada
+              bibendum arcu.
             </p>
 
             <p>
-              Shortly after graduating from{' '}
-              <a href="https://www.ccis.northeastern.edu">Northeastern University</a>, I joined the
-              engineering team at <a href="https://www.upstatement.com">Upstatement</a> where I work
-              on a wide variety of interesting and meaningful projects on a daily basis.
+              This is <a href="https://www.ccis.northeastern.edu">a link</a>. Nunc sed augue lacus
+              viverra vitae congue eu consequat. Cursus eget nunc scelerisque viverra. Pulvinar
+              mattis nunc sed blandit libero volutpat sed. Massa ultricies mi quis hendrerit.
             </p>
 
             <p>Here are a few technologies I've been working with recently:</p>
