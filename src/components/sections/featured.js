@@ -34,10 +34,10 @@ const StyledProject = styled.div`
       }
       @media (max-width: 768px) {
         grid-column: 1 / -1;
-        padding: 40px 40px 30px;
+        padding: 150px 40px 30px;
       }
       @media (max-width: 480px) {
-        padding: 25px 25px 20px;
+        padding: 150px 25px 20px;
       }
     }
     .project-tech-list {
@@ -75,13 +75,14 @@ const StyledProject = styled.div`
     }
 
     @media (max-width: 768px) {
+      ${({ theme }) => theme.mixins.boxShadow};
       grid-column: 1 / -1;
-      padding: 40px 40px 30px;
+      padding: 150px 40px 30px;
       z-index: 5;
     }
 
     @media (max-width: 480px) {
-      padding: 30px 25px 20px;
+      padding: 150px 25px 20px;
     }
   }
 
@@ -102,7 +103,7 @@ const StyledProject = styled.div`
     }
 
     @media (max-width: 768px) {
-      color: var(--white);
+      color: var(--lightest-slate);
     }
   }
 
@@ -193,9 +194,11 @@ const StyledProject = styled.div`
     z-index: 1;
 
     @media (max-width: 768px) {
+      z-index: 5;
       grid-column: 1 / -1;
       height: 100%;
-      opacity: 0.25;
+      opacity: 0.9;
+      mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
     }
 
     a {
@@ -240,7 +243,6 @@ const StyledProject = styled.div`
         object-fit: cover;
         width: auto;
         height: 100%;
-        filter: grayscale(100%) contrast(1);
       }
     }
   }
