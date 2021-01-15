@@ -253,7 +253,7 @@ const Featured = () => {
     query {
       featured: allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/featured/" } }
-        sort: { fields: [frontmatter___date], order: DESC }
+        sort: { fields: [frontmatter___date], order: ASC }
       ) {
         edges {
           node {
@@ -269,6 +269,7 @@ const Featured = () => {
               tech
               github
               external
+              youtube
             }
             html
           }
@@ -296,7 +297,7 @@ const Featured = () => {
         {featuredProjects &&
           featuredProjects.map(({ node }, i) => {
             const { frontmatter, html } = node;
-            const { external, title, tech, github, cover } = frontmatter;
+            const { external, title, tech, github, cover, youtube } = frontmatter;
 
             return (
               <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
@@ -315,13 +316,31 @@ const Featured = () => {
 
                   <div className="project-links">
                     {github && (
-                      <a href={github} aria-label="GitHub Link">
+                      <a
+                        href={github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="GitHub Link">
                         <Icon name="GitHub" />
                       </a>
                     )}
                     {external && (
-                      <a href={external} aria-label="External Link" className="external">
+                      <a
+                        href={external}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="External Link"
+                        className="external">
                         <Icon name="External" />
+                      </a>
+                    )}
+                    {youtube && (
+                      <a
+                        href={youtube}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Youtube Link">
+                        <Icon name="Youtube" />
                       </a>
                     )}
                   </div>
