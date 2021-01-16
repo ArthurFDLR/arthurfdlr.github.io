@@ -102,7 +102,7 @@ const Layout = ({ children, location }) => {
 
               <div id="content">
                 {children}
-                <Footer />
+                {isHome === true && <Footer />}
               </div>
             </StyledContent>
           )}
