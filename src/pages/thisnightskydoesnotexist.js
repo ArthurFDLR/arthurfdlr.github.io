@@ -7,6 +7,14 @@ import styled from 'styled-components';
 
 import { Layout } from '@components';
 
+const database_size = 1000; //Number of generated images in the database
+
+function get_random_image_url() {
+  let img_id = (Math.floor(Math.random() * database_size) + 1).toString();
+  img_id = '0'.repeat(4 - img_id.length).concat(img_id);
+  return `https://firebasestorage.googleapis.com/v0/b/thisnightskydoesnotexist.appspot.com/o/images%2Fseed${img_id}.jpg?alt=media`;
+}
+
 const StyledMainContainer = styled.main`
   margin: -300px 0;
   @media (max-width: 768px) {
@@ -42,17 +50,17 @@ const NightSkyPage = ({ location }) => {
     revealProjects.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 10)));
   }, []);
 
-  const img_id = Math.floor(Math.random() * 5) + 1;
-  const img_url = 'https://firebasestorage.googleapis.com/v0/b/thisnightskydoesnotexist.appspot.com/o/images%2F'.concat(
-    img_id.toString().concat('.jpg?alt=media'),
-  );
-
   return (
     <Layout location={location}>
       <Helmet title="This Night Sky Does Not Exist" />
       <main>
         <StyledMainContainer>
-          <img id="imgDisplay" alt="Night sky GAN" src={img_url} className="main-image" />
+          <img
+            id="imgDisplay"
+            alt="Night sky GAN"
+            src={get_random_image_url()}
+            className="main-image"
+          />
           <header ref={revealTitle}>
             <h1 className="heading">This Night Sky Does Not exist</h1>
             <p className="subtitle">

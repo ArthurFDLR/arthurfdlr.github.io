@@ -252,7 +252,9 @@ const Menu = () => {
               <ol>
                 {navLinks.map(({ url, name }, i) => (
                   <li key={i}>
-                    <Link to={url}>{name}</Link>
+                    <Link onClick={toggleMenu} to={url}>
+                      {name}
+                    </Link>
                   </li>
                 ))}
               </ol>
