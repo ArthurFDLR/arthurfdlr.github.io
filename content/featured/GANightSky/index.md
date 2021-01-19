@@ -4,10 +4,12 @@ title: 'This Night Sky does not exist'
 cover: './demo.jpg'
 github: 'https://github.com/ArthurFDLR/GANightSky'
 external: '/thisnightskydoesnotexist/'
+colab: 'https://colab.research.google.com/github/ArthurFDLR/GANightSky/blob/main/GANightSky.ipynb'
+youtube: 'https://youtu.be/dcb4Ckpkx2o'
 tech:
+  - StyleGAN2-ADA
   - Google Colab
   - Firebase
-  - TensorFlow
 showInProjects: true
 ---
 

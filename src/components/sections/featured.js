@@ -78,7 +78,7 @@ const StyledProject = styled.div`
       ${({ theme }) => theme.mixins.boxShadow};
       grid-column: 1 / -1;
       padding: 150px 40px 30px;
-      z-index: 5;
+      border-radius: var(--border-radius);
     }
 
     @media (max-width: 480px) {
@@ -170,6 +170,7 @@ const StyledProject = styled.div`
     a {
       ${({ theme }) => theme.mixins.flexCenter};
       padding: 10px;
+      z-index: 11;
 
       &.external {
         svg {
@@ -198,7 +199,13 @@ const StyledProject = styled.div`
       grid-column: 1 / -1;
       height: 100%;
       opacity: 0.9;
-      mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+      mask-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0)
+      );
     }
 
     a {
@@ -267,8 +274,9 @@ const Featured = () => {
                 }
               }
               tech
-              github
               external
+              github
+              colab
               youtube
             }
             html
@@ -297,12 +305,11 @@ const Featured = () => {
         {featuredProjects &&
           featuredProjects.map(({ node }, i) => {
             const { frontmatter, html } = node;
-            const { external, title, tech, github, cover, youtube } = frontmatter;
+            const { external, title, tech, github, cover, colab, youtube } = frontmatter;
 
             return (
               <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
                 <div className="project-content">
-                  <p className="project-overline">Featured Project</p>
                   <h3 className="project-title">{title}</h3>
                   <div className="project-description" dangerouslySetInnerHTML={{ __html: html }} />
 
@@ -315,6 +322,16 @@ const Featured = () => {
                   )}
 
                   <div className="project-links">
+                    {external && (
+                      <a
+                        href={external}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="External Link"
+                        className="external">
+                        <Icon name="External" />
+                      </a>
+                    )}
                     {github && (
                       <a
                         href={github}
@@ -324,14 +341,13 @@ const Featured = () => {
                         <Icon name="GitHub" />
                       </a>
                     )}
-                    {external && (
+                    {colab && (
                       <a
-                        href={external}
+                        href={colab}
                         target="_blank"
                         rel="noopener noreferrer"
-                        aria-label="External Link"
-                        className="external">
-                        <Icon name="External" />
+                        aria-label="Google Colab Notebook">
+                        <Icon name="Colab" />
                       </a>
                     )}
                     {youtube && (

@@ -1,3 +1,4 @@
+//https://feathericons.com/
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
@@ -15,8 +16,11 @@ import {
   IconStar,
   IconTwitter,
   IconZap,
+  IconRefresh,
+  IconYoutube,
+  IconColab,
+  IconJupyter,
 } from '@components/icons';
-import IconYoutube from './youtube';
 
 const Icon = ({ name }) => {
   switch (name) {
@@ -48,8 +52,14 @@ const Icon = ({ name }) => {
       return <IconTwitter />;
     case 'Youtube':
       return <IconYoutube />;
+    case 'Refresh':
+      return <IconRefresh />;
     case 'Zap':
       return <IconZap />;
+    case 'Jupyter':
+      return <IconJupyter />;
+    case 'Colab':
+      return <IconColab />;
     default:
       return <IconExternal />;
   }
