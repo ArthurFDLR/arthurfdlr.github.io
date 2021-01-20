@@ -49,8 +49,8 @@ const Contact = () => {
       <h2 className="heading">Get In Touch</h2>
 
       <p>
-        Graduating at the end of Summer 2021, I'm actively looking for opportunities.
-        Besides, my inbox is always open if you have questions or just want to say hi!
+        Graduating at the end of Summer 2021, I'm actively looking for opportunities. Besides, my
+        inbox is always open if you have questions or just want to say hi!
       </p>
 
       <a className="email-link" href={`mailto:${email}`}>
