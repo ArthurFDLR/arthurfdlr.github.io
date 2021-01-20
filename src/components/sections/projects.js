@@ -92,7 +92,7 @@ const StyledProject = styled.div`
           svg {
             width: 22px;
             height: 22px;
-            margin-top: -4px;
+            margin-top: -3px;
           }
         }
 
@@ -156,6 +156,7 @@ const Projects = () => {
               title
               tech
               github
+              youtube
               external
             }
             html
@@ -193,7 +194,7 @@ const Projects = () => {
         {projectsToShow &&
           projectsToShow.map(({ node }, i) => {
             const { frontmatter, html } = node;
-            const { github, external, title, tech } = frontmatter;
+            const { github, external, youtube, title, tech } = frontmatter;
 
             return (
               <CSSTransition
@@ -215,14 +216,32 @@ const Projects = () => {
                           <Icon name="Folder" />
                         </div>
                         <div className="project-links">
-                          {github && (
-                            <a href={github} aria-label="GitHub Link">
-                              <Icon name="GitHub" />
+                          {external && (
+                            <a
+                              href={external}
+                              aria-label="External Link"
+                              className="external"
+                              target="_blank"
+                              rel="noopener noreferrer">
+                              <Icon name="External" />
                             </a>
                           )}
-                          {external && (
-                            <a href={external} aria-label="External Link" className="external">
-                              <Icon name="External" />
+                          {youtube && (
+                            <a
+                              href={github}
+                              aria-label="Youyube Link"
+                              target="_blank"
+                              rel="noopener noreferrer">
+                              <Icon name="Youtube" />
+                            </a>
+                          )}
+                          {github && (
+                            <a
+                              href={github}
+                              aria-label="GitHub Link"
+                              target="_blank"
+                              rel="noopener noreferrer">
+                              <Icon name="GitHub" />
                             </a>
                           )}
                         </div>

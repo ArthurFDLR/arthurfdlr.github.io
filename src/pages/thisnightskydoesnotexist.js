@@ -126,6 +126,11 @@ const NightSkyPage = ({ location }) => {
                 <q>The coolest idea in deep learning in the last 20 years</q>, Yann LeCun about
                 GANs.
               </p>
+              <p>
+                <a href="https://mega.nz/file/jugDECiD#Qs6qXAo20g1KKA29o1hq5fTPj8zVikoawDfT1Lm8IGs">
+                  Pickle download
+                </a>
+              </p>
             </header>
           </div>
         </StyledMainContainer>

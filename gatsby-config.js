@@ -5,7 +5,7 @@ module.exports = {
     title: 'Arthur Findelair',
     description:
       'Arthur Findelair is an embedded system engineering student based in Chicago, IL specializing in the application of Machine Learning techniques toward smarter robots.',
-    siteUrl: 'https://arthurfdlr.github.io', // No trailing slash allowed!
+    siteUrl: 'https://arthurfindelair.com/', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '',
   },
