@@ -157,6 +157,7 @@ const Projects = () => {
               tech
               github
               youtube
+              colab
               external
             }
             html
@@ -194,7 +195,7 @@ const Projects = () => {
         {projectsToShow &&
           projectsToShow.map(({ node }, i) => {
             const { frontmatter, html } = node;
-            const { github, external, youtube, title, tech } = frontmatter;
+            const { github, external, youtube, colab, title, tech } = frontmatter;
 
             return (
               <CSSTransition
@@ -219,29 +220,38 @@ const Projects = () => {
                           {external && (
                             <a
                               href={external}
+                              target="_blank"
+                              rel="noopener noreferrer"
                               aria-label="External Link"
-                              className="external"
-                              target="_blank"
-                              rel="noopener noreferrer">
+                              className="external">
                               <Icon name="External" />
-                            </a>
-                          )}
-                          {youtube && (
-                            <a
-                              href={github}
-                              aria-label="Youyube Link"
-                              target="_blank"
-                              rel="noopener noreferrer">
-                              <Icon name="Youtube" />
                             </a>
                           )}
                           {github && (
                             <a
                               href={github}
-                              aria-label="GitHub Link"
                               target="_blank"
-                              rel="noopener noreferrer">
+                              rel="noopener noreferrer"
+                              aria-label="GitHub Link">
                               <Icon name="GitHub" />
+                            </a>
+                          )}
+                          {colab && (
+                            <a
+                              href={colab}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              aria-label="Google Colab Notebook">
+                              <Icon name="Colab" />
+                            </a>
+                          )}
+                          {youtube && (
+                            <a
+                              href={youtube}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              aria-label="Youtube Link">
+                              <Icon name="Youtube" />
                             </a>
                           )}
                         </div>
