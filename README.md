@@ -7,6 +7,10 @@
 
 <img src="./static/og.png" width="800" alt="OpenHand snapshot" class="center">
 
+[![GitHub](https://img.shields.io/github/license/arthurfdlr/arthurfdlr.github.io)](https://github.com/ArthurFDLR/arthurfdlr.github.io/blob/source/LICENSE)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/ArthurFDLR/arthurfdlr.github.io/Gatsby%20Publish)](https://github.com/ArthurFDLR/arthurfdlr.github.io/actions?query=workflow%3A%22Gatsby+Publish%22)
+[![Website](https://img.shields.io/website?down_message=Offline&label=arthurfindelair.com&up_message=Online&url=https%3A%2F%2Farthurfindelair.com%2F)](https://arthurfindelair.com/)
+
 ## 🛠 Installation & Set Up
 
 1. Install the Gatsby CLI
