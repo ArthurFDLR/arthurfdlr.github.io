@@ -88,7 +88,7 @@ const StyledProject = styled.div`
 
   .project-overline {
     margin: 10px 0;
-    color: var(--green);
+    color: var(--blue);
     font-family: var(--font-mono);
     font-size: var(--fz-xs);
     font-weight: 400;
@@ -113,7 +113,7 @@ const StyledProject = styled.div`
     z-index: 2;
     padding: 25px;
     border-radius: var(--border-radius);
-    background-color: var(--light-navy);
+    background-color: var(--light-grey-alt);
     color: var(--light-slate);
     font-size: var(--fz-lg);
 
@@ -210,7 +210,7 @@ const StyledProject = styled.div`
 
     a {
       width: 100%;
-      background-color: var(--green);
+      background-color: var(--blue);
       border-radius: var(--border-radius);
       vertical-align: middle;
 
@@ -236,7 +236,7 @@ const StyledProject = styled.div`
         bottom: 0;
         z-index: 3;
         transition: var(--transition);
-        background-color: var(--navy);
+        background-color: var(--light-grey);
         mix-blend-mode: multiply;
       }
     }

@@ -52,7 +52,7 @@ const StyledPostInner = styled.div`
   padding: 2rem 1.75rem;
   border-radius: var(--border-radius);
   transition: var(--transition);
-  background-color: var(--light-navy);
+  background-color: var(--light-grey-alt);
 
   header,
   a {
@@ -76,7 +76,7 @@ const StyledPostHeader = styled.div`
   margin-bottom: 30px;
 `;
 const StyledFolder = styled.div`
-  color: var(--green);
+  color: var(--blue);
   svg {
     width: 40px;
     height: 40px;
@@ -106,7 +106,7 @@ const StyledTags = styled.ul`
   list-style: none;
 
   li {
-    color: var(--green);
+    color: var(--blue);
     font-family: var(--font-mono);
     font-size: var(--fz-xxs);
     line-height: 1.75;

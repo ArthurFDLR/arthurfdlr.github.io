@@ -8,4 +8,4 @@ company: 'Me'
 showInProjects: true
 ---
 
-Some physics phenomena are cooler than others. The conservation of momentum absolutely is one of them. Here is my attempt at mastering it using a flywheel.
+Some physics phenomena are cooler than others. The conservation of momentum absolutely is a fun one. Here is my attempt at mastering it using a flywheel.

@@ -5,17 +5,17 @@ import PrismStyles from './PrismStyles';
 const GlobalStyle = createGlobalStyle`
   ${Fonts};
   :root {
-    --dark-navy: #CFCFD3;
-    --navy: #E9EBEE;
-    --light-navy: #E9EBEE;
+    --loading-color: #CFCFD3;
+    --light-grey: #E9EBEE;
+    --light-grey-alt: #EAECF0;
     --lightest-navy: #E9EBEE;
-    --navy-shadow: rgba(20, 20, 20, 0.7);
+    --grey-shadow: rgba(20, 20, 20, 0.7);
     --slate: #7C7F83; 
     --light-slate: #3C4147;
     --lightest-slate: #00184E;
     --white: #e6f1ff;
-    --green: #035DB4;
-    --green-tint: rgba(0, 95, 184, 0.1);
+    --blue: #035DB4;
+    --blue-tint: rgba(0, 95, 184, 0.1);
 
     --font-sans: 'Calibre', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;
     --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
@@ -70,7 +70,7 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    background-color: var(--navy);
+    background-color: var(--light-grey);
     color: var(--slate);
     font-family: var(--font-sans);
     font-size: var(--fz-xl);
@@ -188,7 +188,7 @@ const GlobalStyle = createGlobalStyle`
       position: relative;
       bottom: 4px;
       margin-right: 10px;
-      color: var(--green);
+      color: var(--blue);
       font-family: var(--font-mono);
       font-size: clamp(var(--fz-md), 3vw, var(--fz-xl));
       font-weight: 400;
@@ -256,7 +256,7 @@ const GlobalStyle = createGlobalStyle`
 
     &:hover,
     &:focus {
-      color: var(--green);
+      color: var(--blue);
     }
 
     &.inline-link {
@@ -298,7 +298,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     & > code {
-      background-color: var(--light-navy);
+      background-color: var(--light-grey-alt);
       color: var(--white);
       font-size: var(--fz-sm);
       border-radius: var(--border-radius);
@@ -320,14 +320,14 @@ const GlobalStyle = createGlobalStyle`
           content: '▹';
           position: absolute;
           left: 0;
-          color: var(--green);
+          color: var(--blue);
         }
       }
     }
   }
 
   blockquote {
-    border-left-color: var(--green);
+    border-left-color: var(--blue);
     border-left-style: solid;
     border-left-width: 1px;
     margin-left: 0px;
@@ -356,18 +356,18 @@ const GlobalStyle = createGlobalStyle`
   }
 
   #logo {
-    color: var(--green);
+    color: var(--blue);
   }
 
   .overline {
-    color: var(--green);
+    color: var(--blue);
     font-family: var(--font-mono);
     font-size: var(--fz-md);
     font-weight: 400;
   }
 
   .subtitle {
-    color: var(--green);
+    color: var(--blue);
     margin: 0 0 20px 0;
     font-size: var(--fz-md);
     font-family: var(--font-mono);
@@ -390,7 +390,7 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     align-items: center;
     margin-bottom: 50px;
-    color: var(--green);
+    color: var(--blue);
 
     .arrow {
       display: block;
