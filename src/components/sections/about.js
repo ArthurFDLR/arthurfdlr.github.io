@@ -132,7 +132,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['Python', 'TensorFlow', 'C++', 'PyQt', 'PlatformIO'];
+  const skills = ['Python', 'TensorFlow', 'C++', 'PlatformIO', 'Java', 'Qt'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -141,22 +141,28 @@ const About = () => {
       <div className="inner">
         <StyledText>
           <div>
-            <p>Hello! I'm Arthur, a software engineer based in Chicago, IL.</p>
-
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Diam volutpat commodo sed egestas egestas
-              fringilla phasellus faucibus. Pretium vulputate sapien nec sagittis aliquam malesuada
-              bibendum arcu.
+              I am a double-degree student in a program between{' '}
+              <a href="https://www.ensma.fr/en/the-school-2/the-school-a-word-from-the-director/">
+                ISAE-ENSMA
+              </a>{' '}
+              and the <a href="https://www.iit.edu/">Illinois Institute of Technology</a>. I will
+              graduate in August 2021, receiving my Master of Science in Electrical Engineering and
+              my Diplôme d'Ingénieur in Aeronautical Engineering.
+            </p>
+            <p>
+              I have always considered myself a maker. Passionate about robotics, I want a career in
+              which I could use and develop such skills. My studies reflect this ambition. I
+              developed a strong knowledge in embedded systems, computer vision, and machine
+              learning. My goal is to develop systems that better understand their surroundings and
+              improve their interactions with humans.
+            </p>
+            <p>
+              When I am not making things, I like to ride my bike, play competitve video games, and
+              take photos!
             </p>
 
-            <p>
-              This is <a href="https://www.ccis.northeastern.edu">a link</a>. Nunc sed augue lacus
-              viverra vitae congue eu consequat. Cursus eget nunc scelerisque viverra. Pulvinar
-              mattis nunc sed blandit libero volutpat sed. Massa ultricies mi quis hendrerit.
-            </p>
-
-            <p>Here are a few technologies I've been working with recently:</p>
+            <p>Here are a few languages and frameworks I've been working with recently:</p>
           </div>
 
           <ul className="skills-list">
