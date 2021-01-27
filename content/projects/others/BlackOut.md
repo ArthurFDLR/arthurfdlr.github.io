@@ -8,6 +8,7 @@ tech:
   - PlatformIO
 company: 'Safran'
 showInProjects: true
+index: 2
 ---
 
 All GNSS systems are down. Air, sea and road traffic are severely affected! The GooseNav project aims at restoring an absolute positionning system combining dead-reconing, beaconing and a network of users sharing their live position estimates.

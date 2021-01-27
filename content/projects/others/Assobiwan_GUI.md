@@ -7,4 +7,5 @@ tech:
   - Python threading
 company: 'Assobiwan'
 showInProjects: false
+index: 10
 ---

@@ -9,6 +9,7 @@ tech:
   - Pytest
 company: 'Me'
 showInProjects: true
+index: 10
 ---
 
 Python packages supporting the import of Caisse d'Epargne bank statements - PDF and CSV - into the [Beancount](https://github.com/beancount/beancount) bookkeeping system.

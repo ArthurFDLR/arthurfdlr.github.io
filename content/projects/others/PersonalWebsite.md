@@ -9,6 +9,7 @@ tech:
   - Github
 company: 'Me'
 showInProjects: false
+index: 10
 ---
 
 Well, it speaks for itself.

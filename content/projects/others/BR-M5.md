@@ -8,6 +8,7 @@ tech:
   - ESP32
 company: 'Me'
 showInProjects: true
+index: 4
 ---
 
 This Bluetooth remote aims to replicate Canon's BR-E1 behavior while adding key features like fully programmable time-lapses that most Canon cameras lack.
