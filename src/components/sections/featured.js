@@ -116,6 +116,7 @@ const StyledProject = styled.div`
     background-color: var(--light-grey-alt);
     color: var(--light-slate);
     font-size: var(--fz-lg);
+    text-align: left;
 
     @media (max-width: 768px) {
       padding: 20px 0;

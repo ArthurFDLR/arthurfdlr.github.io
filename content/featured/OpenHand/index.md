@@ -7,11 +7,11 @@ youtube: 'https://youtu.be/FK-1G749cIo'
 colab: 'https://colab.research.google.com/github/ArthurFDLR/OpenHand-Models/blob/main/OpenHand-Models.ipynb'
 tech:
   - Python
-  - Qt5
   - TensorFlow
   - Poetry
   - OpenCV
+  - Qt5
 showInProjects: true
 ---
 
-Hand gesture classifier tool - Creation of datasets & real-time visualization
+The OpenHand application is built on top of the full-body pose estimator [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose). It eases hand keypoints datasets creation and poses classification live experiments. You can also integrate your own TensorFlow model trained on the available dataset of more than two dozen categories.

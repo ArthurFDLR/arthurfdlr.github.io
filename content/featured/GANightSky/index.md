@@ -13,4 +13,4 @@ tech:
 showInProjects: true
 ---
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+After dozens of hours of training on a custom dataset of images scraped from [Instagram](https://www.instagram.com/), this [StyleGan2-ADA](https://github.com/NVlabs/stylegan2-ada) model can create realistic-looking fake versions of Night Sky. Let this AI continue to dream, follow the link below.

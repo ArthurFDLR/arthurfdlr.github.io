@@ -84,7 +84,7 @@ const Footer = () => (
 
     <StyledCredit tabindex="-1">
       Original website designed by
-      <a href="https://brittanychiang.com/">
+      <a href="https://brittanychiang.com/" target="_blank" rel="noopener noreferrer">
         <div>Brittany Chiang</div>
       </a>
     </StyledCredit>
