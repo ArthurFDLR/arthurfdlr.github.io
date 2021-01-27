@@ -53,7 +53,7 @@ const Hero = () => {
   const four = (
     <p>
       I'm an embedded systems engineering student based in Chicago, IL specializing in the
-      application of Machine Learning techniques toward smarter robots.
+      application of machine learning techniques toward smarter robots.
     </p>
   );
   const five = (

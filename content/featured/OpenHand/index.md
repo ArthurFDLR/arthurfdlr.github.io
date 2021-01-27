@@ -14,4 +14,4 @@ tech:
 showInProjects: true
 ---
 
-The OpenHand application is built on top of the full-body pose estimator [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose). It eases hand keypoints datasets creation and poses classification live experiments. You can also integrate your own TensorFlow model trained on the available dataset of more than two dozen categories.
+The OpenHand application is built on top of the full-body pose estimator [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose). It eases datasets creation and real-time classification. The user can also integrate his own TensorFlow model trained on the available dataset of more than two dozen categories.

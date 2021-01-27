@@ -13,4 +13,4 @@ tech:
 showInProjects: true
 ---
 
-After dozens of hours of training on a custom dataset of images scraped from [Instagram](https://www.instagram.com/), this [StyleGan2-ADA](https://github.com/NVlabs/stylegan2-ada) model can create realistic-looking fake versions of Night Sky. Let this AI continue to dream, follow the link below.
+After dozens of hours of training on a custom dataset of images scraped from [Instagram](https://www.instagram.com/), this [StyleGan2-ADA](https://github.com/NVlabs/stylegan2-ada) model can create realistic-looking fake versions of night skies images. Follow the link below to explore the latent space.
