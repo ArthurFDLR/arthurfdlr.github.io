@@ -158,16 +158,7 @@ const ArchivePage = ({ location, data }) => {
             <tbody>
               {projects.length > 0 &&
                 projects.map(({ node }, i) => {
-                  const {
-                    date,
-                    github,
-                    youtube,
-                    external,
-                    ios,
-                    android,
-                    title,
-                    tech,
-                  } = node.frontmatter;
+                  const { date, github, youtube, external, title, tech } = node.frontmatter;
                   return (
                     <tr key={i} ref={el => (revealProjects.current[i] = el)}>
                       <td className="overline year">{`${new Date(date).getFullYear()}`}</td>
@@ -200,16 +191,6 @@ const ArchivePage = ({ location, data }) => {
                           {youtube && (
                             <a href={github} aria-label="Youtube Link">
                               <Icon name="Youtube" />
-                            </a>
-                          )}
-                          {ios && (
-                            <a href={ios} aria-label="Apple App Store Link">
-                              <Icon name="AppStore" />
-                            </a>
-                          )}
-                          {android && (
-                            <a href={android} aria-label="Google Play Store Link">
-                              <Icon name="PlayStore" />
                             </a>
                           )}
                         </div>
@@ -246,8 +227,6 @@ export const pageQuery = graphql`
             github
             youtube
             external
-            ios
-            android
           }
           html
         }

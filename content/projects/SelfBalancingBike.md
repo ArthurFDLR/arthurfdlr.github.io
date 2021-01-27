@@ -3,7 +3,9 @@ date: '2019-08-20'
 title: 'Self-Balancing bike'
 github: 'https://github.com/ArthurFDLR/Self_balancing_bike'
 tech:
-  -
+  - PID controller
+  - BLDC
+  - Catia
 company: 'Me'
 showInProjects: true
 ---
