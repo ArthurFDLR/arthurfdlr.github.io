@@ -1,5 +1,5 @@
 ---
-date: 'date: '2020-12-20''
+date: '2020-12-20'
 title: 'OpenHand'
 cover: './demo.png'
 github: 'https://github.com/ArthurFDLR/OpenHand-App'
