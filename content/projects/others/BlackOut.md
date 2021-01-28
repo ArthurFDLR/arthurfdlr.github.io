@@ -11,5 +11,6 @@ showInProjects: true
 index: 2
 ---
 
-All GNSS systems are down. Air, sea and road traffic are severely affected! The GooseNav project aims at restoring an absolute positionning system combining dead-reconing, beaconing and a network of users sharing their live position estimates.
-[Safran Black-Out Challenge](https://www.safran-group.com/media/love-challenge-here-safran-we-do-too-20200204)
+[Black-Out Challenge](https://www.safran-group.com/media/love-challenge-here-safran-we-do-too-20200204): All GNSS systems are down. Air, sea, and road traffic are severely affected!
+
+The GooseNav project aims at restoring an absolute positioning system combining dead-reckoning, beaconing, and a network of users sharing their live position estimates.

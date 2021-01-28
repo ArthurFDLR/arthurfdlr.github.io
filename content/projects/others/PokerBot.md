@@ -10,4 +10,4 @@ showInProjects: true
 index: 3
 ---
 
-A good Poker player embodies intuition, strategy, and probability estimation. This Poker bot compensates for its lack of instinct by a robust Monte Carlo algorithm to evaluate its hand and a genetically optimized strategy.
+A good poker player embodies intuition, strategy, and probability estimation. This poker bot compensates for its lack of instinct by a robust Monte Carlo algorithm to evaluate its hand and a genetically optimized strategy.
