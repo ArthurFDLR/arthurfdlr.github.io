@@ -110,7 +110,7 @@ const StyledProject = styled.div`
   .project-description {
     ${({ theme }) => theme.mixins.boxShadow};
     position: relative;
-    z-index: 2;
+    z-index: 3;
     padding: 25px;
     border-radius: var(--border-radius);
     background-color: var(--light-grey-alt);
@@ -171,7 +171,7 @@ const StyledProject = styled.div`
     a {
       ${({ theme }) => theme.mixins.flexCenter};
       padding: 10px;
-      z-index: 11;
+      z-index: 2;
 
       &.external {
         svg {
@@ -193,10 +193,10 @@ const StyledProject = styled.div`
     grid-column: 6 / -1;
     grid-row: 1 / -1;
     position: relative;
-    z-index: 1;
+    z-index: 0;
 
     @media (max-width: 768px) {
-      z-index: 5;
+      z-index: 1;
       grid-column: 1 / -1;
       height: 100%;
       opacity: 0.9;
@@ -235,7 +235,7 @@ const StyledProject = styled.div`
         left: 0;
         right: 0;
         bottom: 0;
-        z-index: 3;
+        z-index: 1;
         transition: var(--transition);
         background-color: var(--light-grey);
         mix-blend-mode: multiply;

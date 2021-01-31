@@ -7,10 +7,10 @@ const GlobalStyle = createGlobalStyle`
   :root {
     --loading-color: #CFCFD3;
     --light-grey: #E9EBEE;
-    --light-grey-alt: #EAECF0;
+    --light-grey-alt: #EDEFF3;
     --lightest-navy: #E9EBEE;
     --grey-shadow: rgba(20, 20, 20, 0.7);
-    --slate: #7C7F83; 
+    --slate: #636568; 
     --light-slate: #3C4147;
     --lightest-slate: #00184E;
     --white: #e6f1ff;

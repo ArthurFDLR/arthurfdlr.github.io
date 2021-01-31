@@ -143,12 +143,18 @@ const About = () => {
           <div>
             <p>
               I am a double-degree student in a program between{' '}
-              <a href="https://www.ensma.fr/en/the-school-2/the-school-a-word-from-the-director/">
+              <a
+                href="https://www.ensma.fr/en/the-school-2/the-school-a-word-from-the-director/"
+                target="_blank"
+                rel="noopener noreferrer">
                 ISAE-ENSMA
               </a>{' '}
-              and the <a href="https://www.iit.edu/">Illinois Institute of Technology</a>. I will
-              graduate in August 2021, receiving my Master of Science in Electrical Engineering and
-              my Diplôme d'Ingénieur in Aeronautical Engineering.
+              and the{' '}
+              <a href="https://www.iit.edu/" target="_blank" rel="noopener noreferrer">
+                Illinois Institute of Technology
+              </a>
+              . I will graduate in August 2021, receiving my Master of Science in Electrical
+              Engineering and my Diplôme d'Ingénieur in Aeronautical Engineering.
             </p>
             <p>
               I have always considered myself a maker. Passionate about robotics, I want a career in
