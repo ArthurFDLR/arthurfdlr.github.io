@@ -4,7 +4,7 @@ title: 'The GooseNav project: An inter-locating network'
 github: 'https://github.com/ArthurFDLR/BlackOut_Challenge'
 tech:
   - OBD-II protocol
-  - Raspberry
+  - Raspberry Pi
   - PlatformIO
 company: 'Safran'
 showInProjects: true
