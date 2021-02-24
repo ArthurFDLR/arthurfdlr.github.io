@@ -132,8 +132,6 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['Python', 'TensorFlow', 'C++', 'PlatformIO', 'Java', 'Qt'];
-
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
       <h2 className="heading">About Me</h2>
@@ -167,13 +165,7 @@ const About = () => {
               When I am not making things, I like to ride my bike, play competitve video games, and
               take photos!
             </p>
-
-            <p>Here are a few languages and frameworks I've been working with recently:</p>
           </div>
-
-          <ul className="skills-list">
-            {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
-          </ul>
         </StyledText>
 
         <StyledPic>
