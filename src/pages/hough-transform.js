@@ -60,9 +60,8 @@ const StyledMainContainer = styled.main`
 `;
 
 const HoughPage = ({ location }) => {
-  const width = window.innerWidth > 0 ? window.innerWidth : screen.width;
   let canvasSize = 360;
-  if (width < 480) {
+  if (screen.width < 480) {
     canvasSize = 250;
   }
 
