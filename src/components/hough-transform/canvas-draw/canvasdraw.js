@@ -14,18 +14,38 @@ import { Catenary } from './catenary-curve';
 
 function drawImage({ ctx, img, x, y, w, h, offsetX, offsetY } = {}) {
   // Defaults
-  if (typeof x !== 'number') {x = 0;}
-  if (typeof y !== 'number') {y = 0;}
-  if (typeof w !== 'number') {w = ctx.canvas.width;}
-  if (typeof h !== 'number') {h = ctx.canvas.height;}
-  if (typeof offsetX !== 'number') {offsetX = 0.5;}
-  if (typeof offsetY !== 'number') {offsetY = 0.5;}
+  if (typeof x !== 'number') {
+    x = 0;
+  }
+  if (typeof y !== 'number') {
+    y = 0;
+  }
+  if (typeof w !== 'number') {
+    w = ctx.canvas.width;
+  }
+  if (typeof h !== 'number') {
+    h = ctx.canvas.height;
+  }
+  if (typeof offsetX !== 'number') {
+    offsetX = 0.5;
+  }
+  if (typeof offsetY !== 'number') {
+    offsetY = 0.5;
+  }
 
   // keep bounds [0.0, 1.0]
-  if (offsetX < 0) {offsetX = 0;}
-  if (offsetY < 0) {offsetY = 0;}
-  if (offsetX > 1) {offsetX = 1;}
-  if (offsetY > 1) {offsetY = 1;}
+  if (offsetX < 0) {
+    offsetX = 0;
+  }
+  if (offsetY < 0) {
+    offsetY = 0;
+  }
+  if (offsetX > 1) {
+    offsetX = 1;
+  }
+  if (offsetY > 1) {
+    offsetY = 1;
+  }
 
   const iw = img.width;
   const ih = img.height;
@@ -39,8 +59,12 @@ function drawImage({ ctx, img, x, y, w, h, offsetX, offsetY } = {}) {
   let ar = 1;
 
   // decide which gap to fill
-  if (nw < w) {ar = w / nw;}
-  if (Math.abs(ar - 1) < 1e-14 && nh < h) {ar = h / nh;} // updated
+  if (nw < w) {
+    ar = w / nw;
+  }
+  if (Math.abs(ar - 1) < 1e-14 && nh < h) {
+    ar = h / nh;
+  } // updated
   nw *= ar;
   nh *= ar;
 
@@ -52,10 +76,18 @@ function drawImage({ ctx, img, x, y, w, h, offsetX, offsetY } = {}) {
   cy = (ih - ch) * offsetY;
 
   // make sure source rectangle is valid
-  if (cx < 0) {cx = 0;}
-  if (cy < 0) {cy = 0;}
-  if (cw > iw) {cw = iw;}
-  if (ch > ih) {ch = ih;}
+  if (cx < 0) {
+    cx = 0;
+  }
+  if (cy < 0) {
+    cy = 0;
+  }
+  if (cw > iw) {
+    cw = iw;
+  }
+  if (ch > ih) {
+    ch = ih;
+  }
 
   // fill image in dest. rectangle
   ctx.drawImage(img, cx, cy, cw, ch, x, y, w, h);
@@ -204,7 +236,9 @@ export default class CanvasDraw extends PureComponent {
   }
 
   drawImage = () => {
-    if (!this.props.imgSrc) {return;}
+    if (!this.props.imgSrc) {
+      return;
+    }
 
     // Load the image
     this.image = new Image();
@@ -224,14 +258,13 @@ export default class CanvasDraw extends PureComponent {
     this.triggerOnChange();
   };
 
-  getSaveData = () => 
+  getSaveData = () =>
     // Construct and return the stringified saveData object
     JSON.stringify({
       lines: this.lines,
       width: this.props.canvasWidth,
       height: this.props.canvasHeight,
-    })
-  ;
+    });
 
   loadSaveData = (saveData, immediate = this.props.immediateLoading) => {
     if (typeof saveData !== 'string') {
@@ -380,7 +413,9 @@ export default class CanvasDraw extends PureComponent {
   };
 
   handlePointerMove = (x, y) => {
-    if (this.props.disabled) {return;}
+    if (this.props.disabled) {
+      return;
+    }
 
     this.lazy.update({ x, y });
     const isDisabled = !this.lazy.isEnabled();
@@ -450,7 +485,9 @@ export default class CanvasDraw extends PureComponent {
   };
 
   saveLine = ({ brushColor, brushRadius } = {}) => {
-    if (this.points.length < 2) {return;}
+    if (this.points.length < 2) {
+      return;
+    }
 
     // Save as new line
     this.lines.push({
@@ -503,7 +540,9 @@ export default class CanvasDraw extends PureComponent {
   };
 
   drawGrid = ctx => {
-    if (this.props.hideGrid) {return;}
+    if (this.props.hideGrid) {
+      return;
+    }
 
     ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 
@@ -530,10 +569,21 @@ export default class CanvasDraw extends PureComponent {
       ctx.lineTo(ctx.canvas.width, countY);
     }
     ctx.stroke();
+
+    ctx.beginPath();
+    ctx.lineWidth = 3;
+    ctx.moveTo(0, 0);
+    ctx.lineTo(0, ctx.canvas.height);
+    ctx.lineTo(ctx.canvas.width, ctx.canvas.height);
+    ctx.lineTo(ctx.canvas.width, 0);
+    ctx.lineTo(0, 0);
+    ctx.stroke();
   };
 
   drawInterface = (ctx, pointer, brush) => {
-    if (this.props.hideInterface) {return;}
+    if (this.props.hideInterface) {
+      return;
+    }
 
     ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 

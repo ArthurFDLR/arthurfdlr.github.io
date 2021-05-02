@@ -9,7 +9,7 @@ import PropTypes from 'prop-types';
 import { srConfig } from '@config';
 
 const StyledMainContainer = styled.main`
-  margin: -300px 0;
+  margin: -350px 0;
   @media (max-width: 768px) {
     margin: -200px 0;
   }
@@ -21,39 +21,59 @@ const StyledMainContainer = styled.main`
   }
 
   .content {
-    max-width: 95vh;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     -o-object-fit: contain;
     object-fit: contain;
   }
 
-  .container {
+  .canvas-container {
+    -o-object-fit: contain;
+    object-fit: contain;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .hover-window {
     margin-top: 30px;
+    padding-top: 0;
+    padding-bottom: 1%;
     box-shadow: 0px 0px 30px rgba(10, 10, 10, 0.7);
     -o-object-fit: contain;
     object-fit: contain;
     border-radius: 1.5%;
     background-color: #fff;
-    padding: 10px;
-    display: flex;
   }
 
   .canvas-custom {
-    display: inline-block;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  .clear-button {
+    ${({ theme }) => theme.mixins.button};
     margin-left: auto;
     margin-right: auto;
-    min-width: 300px;
+    display: block;
+    padding: 10px;
   }
 `;
 
 const HoughPage = ({ location }) => {
-  const canvasSize = 300;
+  const canvasSize = 350;
+  const gridColor = 'rgba(150,150,150,0.17)';
+
   const houghCanvasRef = useRef(null);
+  const drawCanvasRef = useRef(null);
   const revealTitle = useRef(null);
+
   const onPointDraw = ({ x, y }) => {
     houghCanvasRef.current.drawHoughPoints({ x, y });
+  };
+
+  const clear = () => {
+    houghCanvasRef.current.drawGrid();
+    drawCanvasRef.current.clear();
   };
 
   useEffect(() => {
@@ -62,36 +82,42 @@ const HoughPage = ({ location }) => {
 
   return (
     <Layout location={location}>
-      <Helmet title="This Night Sky Does Not Exist" />
+      <Helmet title="Hough Transform" />
       <main>
         <StyledMainContainer>
           <div className="content">
             <header ref={revealTitle}>
               <h1 className="heading">Hough transform</h1>
-              <p className="inner">
-                The Hough transform is a feature extraction technique used in image analysis,
-                computer vision, and digital image processing.
-              </p>
+              <p className="inner">Draw edges and see their hough transforms.</p>
             </header>
-            <div className="container">
-              <CanvasDraw
-                className="canvas-custom"
-                onPointDraw={onPointDraw}
-                canvasWidth={canvasSize}
-                canvasHeight={canvasSize}
-                brushRadius={2}
-                lazyRadius={10}
-              />
-              <CanvasHough
-                className="canvas-custom"
-                ref={houghCanvasRef}
-                canvasWidth={canvasSize}
-                canvasHeight={canvasSize}
-                drawingWidth={canvasSize}
-                drawingHeight={canvasSize}
-                brushRadius={1}
-                brushColor="rgba(50, 50, 93, 0.15)"
-              />
+            <div className="hover-window">
+              <div className="canvas-container" style={{ minWidth: '360px' }}>
+                <CanvasDraw
+                  className="canvas-custom"
+                  ref={drawCanvasRef}
+                  onPointDraw={onPointDraw}
+                  canvasWidth={canvasSize}
+                  canvasHeight={canvasSize}
+                  brushRadius={1}
+                  lazyRadius={10}
+                  gridColor={gridColor}
+                />
+                <CanvasHough
+                  className="canvas-custom"
+                  ref={houghCanvasRef}
+                  canvasWidth={canvasSize}
+                  canvasHeight={canvasSize}
+                  drawingWidth={canvasSize}
+                  drawingHeight={canvasSize}
+                  brushRadius={1}
+                  brushColor="rgba(0, 24, 78, 0.15)"
+                  gridColor={gridColor}
+                />
+              </div>
+              <button className="clear-button" onClick={clear}>
+                {' '}
+                Clear{' '}
+              </button>
             </div>
           </div>
         </StyledMainContainer>

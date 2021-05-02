@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types'; // TODO: upgrade to latest eslint tooling
 
-/* eslint-disable react/prop-types */ export default class CanvasHough extends React.Component {
+/* eslint-disable react/prop-types */
+export default class CanvasHough extends React.Component {
   static propTypes = {
     brushRadius: PropTypes.number,
     brushColor: PropTypes.string,
@@ -61,7 +62,9 @@ import PropTypes from 'prop-types'; // TODO: upgrade to latest eslint tooling
     for (; thetaIndex < this.numAngleCells; thetaIndex += this.houghThetaDelta) {
       rho = x * this.cosTable[thetaIndex] + y * this.sinTable[thetaIndex];
       //rho >>= 1;
-      if (this.hough_accum[thetaIndex] === undefined) {this.hough_accum[thetaIndex] = [];}
+      if (this.hough_accum[thetaIndex] === undefined) {
+        this.hough_accum[thetaIndex] = [];
+      }
       if (this.hough_accum[thetaIndex][rho] === undefined) {
         this.hough_accum[thetaIndex][rho] = 1;
       } else {
@@ -82,7 +85,7 @@ import PropTypes from 'prop-types'; // TODO: upgrade to latest eslint tooling
   updateCanvas() {
     //const ctx = this.refs.canvas.getContext('2d');
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-    this.drawGrid(this.ctx);
+    this.drawGrid();
   }
 
   drawHoughPoints({ x, y }) {
@@ -129,34 +132,45 @@ import PropTypes from 'prop-types'; // TODO: upgrade to latest eslint tooling
     this.ctx.stroke();
   };
 
-  drawGrid = ctx => {
-    if (this.props.hideGrid) {return;}
+  drawGrid = () => {
+    if (this.props.hideGrid) {
+      return;
+    }
 
-    ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+    this.ctx.clearRect(0, 0, this.ctx.canvas.width, this.ctx.canvas.height);
 
-    ctx.beginPath();
-    ctx.setLineDash([5, 1]);
-    ctx.setLineDash([]);
-    ctx.strokeStyle = this.props.gridColor;
-    ctx.lineWidth = 0.5;
+    this.ctx.beginPath();
+    this.ctx.setLineDash([5, 1]);
+    this.ctx.setLineDash([]);
+    this.ctx.strokeStyle = this.props.gridColor;
+    this.ctx.lineWidth = 0.5;
 
     const gridSize = 25;
 
     let countX = 0;
-    while (countX < ctx.canvas.width) {
+    while (countX < this.ctx.canvas.width) {
       countX += gridSize;
-      ctx.moveTo(countX, 0);
-      ctx.lineTo(countX, ctx.canvas.height);
+      this.ctx.moveTo(countX, 0);
+      this.ctx.lineTo(countX, this.ctx.canvas.height);
     }
-    ctx.stroke();
+    this.ctx.stroke();
 
     let countY = 0;
-    while (countY < ctx.canvas.height) {
+    while (countY < this.ctx.canvas.height) {
       countY += gridSize;
-      ctx.moveTo(0, countY);
-      ctx.lineTo(ctx.canvas.width, countY);
+      this.ctx.moveTo(0, countY);
+      this.ctx.lineTo(this.ctx.canvas.width, countY);
     }
-    ctx.stroke();
+    this.ctx.stroke();
+
+    this.ctx.beginPath();
+    this.ctx.lineWidth = 3;
+    this.ctx.moveTo(0, 0);
+    this.ctx.lineTo(0, this.ctx.canvas.height);
+    this.ctx.lineTo(this.ctx.canvas.width, this.ctx.canvas.height);
+    this.ctx.lineTo(this.ctx.canvas.width, 0);
+    this.ctx.lineTo(0, 0);
+    this.ctx.stroke();
   };
 
   render() {
