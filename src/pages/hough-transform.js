@@ -9,12 +9,12 @@ import PropTypes from 'prop-types';
 import { srConfig } from '@config';
 
 const StyledMainContainer = styled.main`
-  margin: -350px 0;
+  margin: -300px 0;
   @media (max-width: 768px) {
     margin: -200px 0;
   }
   @media (max-width: 480px) {
-    margin: -150px 0;
+    margin: -180px 0;
   }
   h1 {
     margin: 10vh 0 15px 5px;
@@ -29,7 +29,7 @@ const StyledMainContainer = styled.main`
     -o-object-fit: contain;
     object-fit: contain;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     justify-content: space-evenly;
     align-items: center;
   }
@@ -60,7 +60,12 @@ const StyledMainContainer = styled.main`
 `;
 
 const HoughPage = ({ location }) => {
-  const canvasSize = 350;
+  const width = window.innerWidth > 0 ? window.innerWidth : screen.width;
+  let canvasSize = 360;
+  if (width < 480) {
+    canvasSize = 250;
+  }
+
   const gridColor = 'rgba(150,150,150,0.17)';
 
   const houghCanvasRef = useRef(null);
@@ -86,12 +91,8 @@ const HoughPage = ({ location }) => {
       <main>
         <StyledMainContainer>
           <div className="content">
-            <header ref={revealTitle}>
-              <h1 className="heading">Hough transform</h1>
-              <p className="inner">Draw edges and see their hough transforms.</p>
-            </header>
-            <div className="hover-window">
-              <div className="canvas-container" style={{ minWidth: '360px' }}>
+            <div className="hover-window" style={{ minWidth: canvasSize + 10 }}>
+              <div className="canvas-container">
                 <CanvasDraw
                   className="canvas-custom"
                   ref={drawCanvasRef}
@@ -119,6 +120,10 @@ const HoughPage = ({ location }) => {
                 Clear{' '}
               </button>
             </div>
+            <header ref={revealTitle}>
+              <h1 className="heading">Hough transform</h1>
+              <p className="inner">Draw edges and see their hough transforms.</p>
+            </header>
           </div>
         </StyledMainContainer>
       </main>
