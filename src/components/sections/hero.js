@@ -49,11 +49,11 @@ const Hero = () => {
 
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Arthur Findelair</h2>;
-  const three = <h3 className="big-heading">I'm making smart robots</h3>;
+  const three = <h3 className="medium-heading">I'm making smart robots</h3>;
   const four = (
     <p>
-      I'm an embedded systems engineering student based in Chicago, IL specializing in the
-      application of machine learning techniques toward smarter robots.
+      I am a software engineering student specializing in the application of embedded machine
+      learning techniques to improve autonomous systems.
     </p>
   );
   const five = (

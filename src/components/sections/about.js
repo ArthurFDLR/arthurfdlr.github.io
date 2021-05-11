@@ -140,30 +140,26 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              I am a double-degree student in a program between{' '}
+              I am a maker. I enjoy creating all sorts of things and learning new skills in the
+              process. Autonomous systems particularly draw my interest - my goal is to develop
+              systems that better understand their surroundings and improve their interactions with
+              humans. This ambition naturally led me to acquire skills and knowledge in computer
+              vision, machine learning, and embedded systems through personal projects and studies.
+            </p>
+            <p>
+              I will graduate in August 2021, earning both a Master of Science in Electrical
+              Engineering from the{' '}
+              <a href="https://www.iit.edu/" target="_blank" rel="noopener noreferrer">
+                Illinois Institute of Technology
+              </a>
+              , and a Diplôme d'Ingénieur in Aeronautical Engineering from{' '}
               <a
                 href="https://www.ensma.fr/en/the-school-2/the-school-a-word-from-the-director/"
                 target="_blank"
                 rel="noopener noreferrer">
                 ISAE-ENSMA
-              </a>{' '}
-              and the{' '}
-              <a href="https://www.iit.edu/" target="_blank" rel="noopener noreferrer">
-                Illinois Institute of Technology
               </a>
-              . I will graduate in August 2021, receiving my Master of Science in Electrical
-              Engineering and my Diplôme d'Ingénieur in Aeronautical Engineering.
-            </p>
-            <p>
-              I have always considered myself a maker. Passionate about robotics, I want a career in
-              which I could use and develop such skills. My studies reflect this ambition. I
-              developed a strong knowledge in embedded systems, computer vision, and machine
-              learning. My goal is to develop systems that better understand their surroundings and
-              improve their interactions with humans.
-            </p>
-            <p>
-              When I am not making things, I like to ride my bike, play competitve video games, and
-              take photos!
+              .
             </p>
           </div>
         </StyledText>

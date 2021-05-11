@@ -12,7 +12,7 @@ tech:
   - OpenCV
   - Qt5
 showInProjects: true
-index: 3
+index: 1
 ---
 
-The OpenHand application is built on top of the full-body pose estimator [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose). It eases datasets creation and real-time classification. The user can also integrate his own TensorFlow model trained on the available dataset of more than two dozen categories.
+The OpenHand application is built on top of the full-body pose estimator [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose). It eases dataset creation and real-time classification. The user can also integrate his own TensorFlow model trained on an open-source dataset of more than two dozen categories and more than 11 000 entries.

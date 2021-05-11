@@ -1,6 +1,6 @@
 ---
 date: '2018-04-01'
-title: 'Flight time estimator'
+title: 'Drone flight time estimator'
 github: 'https://github.com/ArthurFDLR/FlightTime_prediction'
 tech:
   - Scipy

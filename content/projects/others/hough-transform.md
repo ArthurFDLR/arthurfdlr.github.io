@@ -12,4 +12,4 @@ showInProjects: true
 index: 1
 ---
 
-The Hough transform is a simple algorithm commonly used in computer vision to detect lines. Draw some lines and see the corresponding Hough space.
+The Hough Transform is a simple algorithm commonly used in computer vision to detect any parametric curve. Draw some lines and witness the corresponding Hough Transform find them.
