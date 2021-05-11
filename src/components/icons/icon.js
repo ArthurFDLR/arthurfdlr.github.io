@@ -20,6 +20,7 @@ import {
   IconYoutube,
   IconColab,
   IconJupyter,
+  IconMedium,
 } from '@components/icons';
 
 const Icon = ({ name }) => {
@@ -60,6 +61,8 @@ const Icon = ({ name }) => {
       return <IconJupyter />;
     case 'Colab':
       return <IconColab />;
+    case 'Medium':
+      return <IconMedium />;
     default:
       return <IconExternal />;
   }

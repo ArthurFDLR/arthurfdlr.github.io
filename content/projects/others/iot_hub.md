@@ -2,6 +2,7 @@
 date: '2021-05-10'
 title: 'IoT-Hub: Control your smart devices'
 github: 'https://github.com/ArthurFDLR/IoT_hub'
+youtube: 'https://youtu.be/wKBkg99ltxM'
 tech:
   - Spring Boot
   - SQLite

@@ -16,4 +16,5 @@ export { default as IconYoutube } from './youtube';
 export { default as IconRefresh } from './refresh';
 export { default as IconJupyter } from './jupyter';
 export { default as IconColab } from './colab';
+export { default as IconMedium } from './medium';
 export { default as IconZap } from './zap';
