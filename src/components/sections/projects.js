@@ -214,7 +214,7 @@ const Projects = () => {
   return (
     <StyledProjectsSection>
       <h2 ref={revealTitle}>Other Noteworthy Projects</h2>
-      <div className="legend">
+      <div className="legend" ref={revealTitle}>
         <div className="entry">
           <Icon name="Pen" />
           <p>Article</p>
