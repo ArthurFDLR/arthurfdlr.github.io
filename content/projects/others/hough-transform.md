@@ -10,6 +10,7 @@ tech:
 company: 'Me'
 showInProjects: true
 index: 1
+icon: 'Pen'
 ---
 
 The Hough Transform is a simple algorithm commonly used in computer vision to detect any parametric curve. Draw some lines and witness the corresponding Hough Transform find them.

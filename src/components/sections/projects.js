@@ -13,6 +13,7 @@ const StyledProjectsSection = styled.section`
 
   h2 {
     font-size: clamp(24px, 5vw, var(--fz-heading));
+    margin-bottom: 0;
   }
 
   .archive-link {
@@ -20,6 +21,32 @@ const StyledProjectsSection = styled.section`
     font-size: var(--fz-sm);
     &:after {
       bottom: 0.1em;
+    }
+    margin-top: 5px;
+  }
+
+  .legend {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+
+    .entry {
+      display: inline-grid;
+      grid-template-columns: auto auto auto;
+      align-items: center;
+      svg {
+        transform: translate(0, -4px);
+        width: 24px;
+        height: 24px;
+      }
+      grid-gap: 5px;
+    }
+
+    .text {
+      display: inline-grid;
+      grid-template-columns: auto auto auto;
+      align-items: center;
+      justify-items: center;
     }
   }
 
@@ -159,6 +186,7 @@ const Projects = () => {
               youtube
               colab
               external
+              icon
             }
             html
           }
@@ -186,16 +214,28 @@ const Projects = () => {
   return (
     <StyledProjectsSection>
       <h2 ref={revealTitle}>Other Noteworthy Projects</h2>
-
+      <div className="legend">
+        <div className="entry">
+          <Icon name="Pen" />
+          <p>Article</p>
+        </div>
+        <div className="entry">
+          <Icon name="Code" />
+          <p className="text">Code</p>
+        </div>
+        <div className="entry">
+          <Icon name="Folder" />
+          <p className="text">Other</p>
+        </div>
+      </div>
       <Link className="inline-link archive-link" to="/archive" ref={revealArchiveLink}>
         view the archive
       </Link>
-
       <TransitionGroup className="projects-grid">
         {projectsToShow &&
           projectsToShow.map(({ node }, i) => {
             const { frontmatter, html } = node;
-            const { github, external, youtube, colab, title, tech } = frontmatter;
+            const { github, external, youtube, colab, title, tech, icon } = frontmatter;
 
             return (
               <CSSTransition
@@ -214,7 +254,7 @@ const Projects = () => {
                     <header>
                       <div className="project-top">
                         <div className="folder">
-                          <Icon name="Folder" />
+                          <Icon name={icon ? icon : 'Folder'} />
                         </div>
                         <div className="project-links">
                           {external && (

@@ -8,6 +8,7 @@ tech:
 company: 'Me'
 showInProjects: true
 index: 6
+icon: 'Code'
 ---
 
 Give life to LED-Cubes with this tool! The user can visually create animations with a frame-by-frame editor, a HUE mode, or even three variables equations (x-axis, y-axis, time).

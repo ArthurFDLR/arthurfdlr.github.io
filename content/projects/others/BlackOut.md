@@ -9,6 +9,7 @@ tech:
 company: 'Safran'
 showInProjects: true
 index: 2
+icon: 'Folder'
 ---
 
 [Black-Out Challenge](https://www.safran-group.com/media/love-challenge-here-safran-we-do-too-20200204): All GNSS systems are down. Air, sea, and road traffic are severely affected!

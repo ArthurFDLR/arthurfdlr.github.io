@@ -9,6 +9,7 @@ tech:
 company: 'Me'
 showInProjects: true
 index: 10
+icon: 'Code'
 ---
 
 Some physics phenomena are cooler than others. The conservation of momentum absolutely is a fun one. Here is my attempt at mastering it using a flywheel.

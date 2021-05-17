@@ -13,6 +13,8 @@ export { default as IconPlayStore } from './playstore';
 export { default as IconStar } from './star';
 export { default as IconTwitter } from './twitter';
 export { default as IconYoutube } from './youtube';
+export { default as IconCode } from './code';
+export { default as IconPen } from './pen';
 export { default as IconRefresh } from './refresh';
 export { default as IconJupyter } from './jupyter';
 export { default as IconColab } from './colab';

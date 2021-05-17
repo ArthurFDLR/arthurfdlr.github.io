@@ -9,6 +9,7 @@ tech:
 company: 'Me'
 showInProjects: true
 index: 10
+icon: 'Code'
 ---
 
 Python packages supporting the import of Chase statements into the [Beancount](https://github.com/beancount/beancount) bookkeeping system.

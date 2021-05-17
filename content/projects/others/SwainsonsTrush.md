@@ -10,6 +10,7 @@ tech:
 company: 'IIT-ECE567'
 showInProjects: true
 index: 5
+icon: 'Pen'
 ---
 
 More likely to be heard than seen, Swainson's Thrushes are slim songbirds with a distinctive pit call. Let's use a Generalized Likelihood Ratio Test to detect this call in a recording.

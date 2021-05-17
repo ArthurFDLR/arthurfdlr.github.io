@@ -10,6 +10,7 @@ tech:
 company: 'IIT'
 showInProjects: true
 index: 1
+icon: 'Code'
 ---
 
 Both computational efficiency and ease of use are critical in neural-networks development. This tool combines a simple python API with a powerful C++ back-end computation library.

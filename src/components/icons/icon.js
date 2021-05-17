@@ -21,6 +21,8 @@ import {
   IconColab,
   IconJupyter,
   IconMedium,
+  IconCode,
+  IconPen,
 } from '@components/icons';
 
 const Icon = ({ name }) => {
@@ -53,6 +55,10 @@ const Icon = ({ name }) => {
       return <IconTwitter />;
     case 'Youtube':
       return <IconYoutube />;
+    case 'Code':
+      return <IconCode />;
+    case 'Pen':
+      return <IconPen />;
     case 'Refresh':
       return <IconRefresh />;
     case 'Zap':

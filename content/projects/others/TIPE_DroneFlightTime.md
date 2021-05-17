@@ -9,6 +9,7 @@ tech:
 company: 'Lycee Kleber - PSI*'
 showInProjects: true
 index: 10
+icon: 'Code'
 ---
 
 This estimator is built upon an empirical expression fine-tuned by the analysis of several propellers. It helps the user to optimize the operating point of its drone's propulsion system.
