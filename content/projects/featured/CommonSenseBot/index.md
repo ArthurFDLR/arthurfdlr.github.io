@@ -10,7 +10,7 @@ tech:
   - PyBullet
   - Qt5
 showInProjects: true
-index: 3
+index: 4
 ---
 
 Let's teach [Pepper (SoftBank Robotics)](https://www.softbankrobotics.com/emea/en/pepper) to serve in a restaurant through common-sense reasoning. The robot evolves in a simulated environment thanks to its knowledge base developed using an answer set programming language and the solver [Clingo](https://potassco.org/clingo/).
