@@ -18,10 +18,12 @@ module.exports = {
       name: 'Youtube',
       url: 'https://www.youtube.com/channel/UCLgrI4ddvTaGcQWrbYewtVg',
     },
+    /*
     {
       name: 'Medium',
       url: 'https://arthurfdlr.medium.com',
     },
+    */
   ],
 
   navLinks: [

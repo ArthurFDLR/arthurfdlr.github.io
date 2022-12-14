@@ -8,7 +8,7 @@ tech:
   - TensorFlow
 company: 'me'
 showInProjects: true
-index: 1
+index: 2
 icon: 'Code'
 ---
 

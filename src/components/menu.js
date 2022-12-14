@@ -260,9 +260,11 @@ const Menu = () => {
               </ol>
             )}
 
+            {/* 
             <a href="/ArthurFindelair_Resume.pdf" className="resume-link">
               Resume
             </a>
+            */}
           </nav>
         </StyledSidebar>
       </div>

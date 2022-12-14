@@ -9,7 +9,7 @@ tech:
   - Gatsby
 company: 'Me'
 showInProjects: true
-index: 1
+index: 2
 icon: 'Folder'
 ---
 

@@ -6,7 +6,7 @@ tech:
   - Published in Towards Data Science
 company: 'IIT'
 showInProjects: true
-index: 1
+index: 2
 icon: 'Pen'
 ---
 

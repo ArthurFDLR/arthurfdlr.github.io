@@ -81,9 +81,9 @@ const StyledPic = styled.div`
     .img {
       position: relative;
       border-radius: var(--border-radius);
-      mix-blend-mode: multiply;
-      filter: grayscale(100%) contrast(1);
-      transition: var(--transition);
+      // mix-blend-mode: multiply;
+      // filter: grayscale(100%) contrast(1);
+      // transition: var(--transition);
     }
 
     &:before,
@@ -118,7 +118,7 @@ const About = () => {
     query {
       avatar: file(sourceInstanceName: { eq: "images" }, relativePath: { eq: "me.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 500, traceSVG: { color: "#64ffda" }) {
+          fluid(maxWidth: 700, traceSVG: { color: "#64ffda" }) {
             ...GatsbyImageSharpFluid_withWebp_tracedSVG
           }
         }
@@ -140,26 +140,31 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              I am a maker. I enjoy creating all sorts of things and learning new skills in the
-              process. Autonomous systems particularly draw my interest - my goal is to develop
-              systems that better understand their surroundings and improve their interactions with
-              humans. This ambition naturally led me to acquire skills and knowledge in computer
-              vision, machine learning, and embedded systems through personal projects and studies.
+            Deca-billions parameters neural networks sure are sexy and exciting.
+            But I still prefer precisely crafted models allying robustness and
+            efficiency to tackle real-world applications.
+            From gesture-controlled drones leveraging embedded GPUs to
+            TV commercials detection deployed on distributed systems,
+            I enjoy designing, training, and deploying Machine Learning models
+            for various applications.
             </p>
             <p>
-              I will graduate in August 2021, earning both a Master of Science in Electrical
-              Engineering from the{' '}
-              <a href="https://www.iit.edu/" target="_blank" rel="noopener noreferrer">
+              After graduating with a Master of Science in Electrical Engineering from the{' '}
+              <a href="https://www.iit.edu" target="_blank" rel="noopener noreferrer">
                 Illinois Institute of Technology
               </a>
               , and a Diplôme d'Ingénieur in Aeronautical Engineering from{' '}
               <a
-                href="https://www.ensma.fr/en/the-school-2/the-school-a-word-from-the-director/"
+                href="https://www.ensma.fr/en/engineering-program"
                 target="_blank"
                 rel="noopener noreferrer">
                 ISAE-ENSMA
               </a>
-              .
+              , I joined{' '}
+              <a href="https://www.nielsen.com" target="_blank" rel="noopener noreferrer">
+                Nielsen
+              </a>
+              , where I'm currently focusing on the analysis of multimedia content.
             </p>
           </div>
         </StyledText>
