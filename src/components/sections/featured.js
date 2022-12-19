@@ -236,16 +236,16 @@ const StyledProject = styled.div`
         right: 0;
         bottom: 0;
         z-index: 1;
-        transition: var(--transition);
-        background-color: var(--light-grey);
-        mix-blend-mode: multiply;
+        // transition: var(--transition);
+        // background-color: var(--light-grey);
+        // mix-blend-mode: multiply;
       }
     }
 
     .img {
       border-radius: var(--border-radius);
-      mix-blend-mode: normal;
-      filter: grayscale(100%) contrast(1);
+      // mix-blend-mode: normal;
+      // filter: grayscale(100%) contrast(1);
 
       @media (max-width: 768px) {
         object-fit: cover;
