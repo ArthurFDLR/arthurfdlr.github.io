@@ -1,0 +1,1 @@
+{"componentChunkName":"component---src-templates-tag-js","path":"/pensieve/tags/tag-2/","result":{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"frontmatter":{"title":"Title","description":"A small description","date":"2020-12-13","slug":"/pensieve/template","tags":["Tag 1","Tag 2"]}}}]}},"pageContext":{"tag":"Tag 2"}}}
